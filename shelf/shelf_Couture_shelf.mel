@@ -1,0 +1,101 @@
+global proc shelf_Couture_shelf () {
+    global string $gBuffStr;
+    global string $gBuffStr0;
+    global string $gBuffStr1;
+
+
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Launches Couture window, possible to toggle docking interface on and off" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Couture " 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/Windows/Documents/maya/2018/scripts/Couture/icons/logoShelf.png" 
+        -image1 "C:/Users/Windows/Documents/maya/2018/scripts/Couture/icons/logoShelf.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import Couture.coutureUI as cUI\nreload(cUI)\ncUI.coutureInterface(dock=True)"
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 67
+        -height 67
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Opens wiki page of couture" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Wiki" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/Windows/Documents/maya/2018/scripts/Couture/icons/logoShelfWiki.png" 
+        -image1 "C:/Users/Windows/Documents/maya/2018/scripts/Couture/icons/logoShelfWiki.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import os \nos.startfile(\"https://www.artstation.com/psichari/blog/z9b1/coutures-wiki\")"
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 67
+        -height 67
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Opens tuorial page of couture" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Tuto" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/Windows/Documents/maya/2018/scripts/Couture/icons/logoShelfTuto.png" 
+        -image1 "C:/Users/Windows/Documents/maya/2018/scripts/Couture/icons/logoShelfTuto.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "os.startfile(\"https://www.artstation.com/psichari/blog/9dq7/couture-tutorial\")"
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+} 
